@@ -67,7 +67,7 @@ IP Address:     211.191.185.254     |   11010011.10111111.10111001.01001110
 So __211.191.185.254__ is one of the correct answers.
 Summing up, we can say that correct answers' range is __(211.191.0.1 - 211.191.255.254)__, except for 211.191.185.75.
 
-![NetPractice - level 1](./imgs/level1.png)
+![NetPractice - level 1](./imgs/level_1.png)
 ___
 ### Level 2
 #### Goal 2
@@ -108,4 +108,4 @@ Host Number:    0.0.0.2             |   00000000.00000000.00000000.000000|10
 IP Address:     128.0.0.162         |   10000000.00000000.00000000.10100010
 ```
 Our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__. Now we can use these addresses for our computers.<br>
-![NetPractice - level 2](./imgs/level2.png)
+![NetPractice - level 2](./imgs/level_2.png)
