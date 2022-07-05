@@ -68,4 +68,4 @@ IP Address:     211.191.185.254     |   11010011.10111111.10111001.01001110
 So __211.191.185.254__ is one of the correct answers.<br> 
 Summing up, we can say that correct answers' range is __(211.191.0.1 - 211.191.255.254)__, except for 211.191.185.75.
 
-![NetPractice - level 1](./level1.png)
+![NetPractice - level 1](./imgs/level1.png)
