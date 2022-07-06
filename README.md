@@ -24,7 +24,7 @@ HostMax:        0.0.0.254           |   00000000.00000000.00000000.|11111110
 ```
 The client B's host number is 0.0.0.12, so we can choose any host from the hosts' range except for 12. For example, if I choose 13 then client A's host will be:
 ```sh
-A Client Host Number: 0.0.0.13      |   00000000.00000000.00000000.|00001101
+Client A's Host Number: 0.0.0.13    |   00000000.00000000.00000000.|00001101
 ```
 By combining network address with host number, we will get the IP address of client A, which will be
 ```sh
@@ -33,7 +33,7 @@ Host Number:    0.0.0.13            |   00000000.00000000.00000000.|00001101
                                         | (Bitwise or)
 IP Address:     104.95.23.13        |   01101000.01011111.00010111.00001101
 ```
-So __104.95.23.13__ is one of the correct answers.
+So __104.95.23.13__ is one of the correct answers.<br>
 Summing up, we can say that correct answers' range is __(104.95.23.1 - 104.95.23.254)__, except for 104.95.23.12.
 #### Goal 2
 This is the same as for Goal 1.
@@ -55,16 +55,16 @@ HostMax:        0.0.255.254         |   00000000.00000000.|11111111.11111110
 ```
 The client C’s host number is 0.0.185.75, so we can choose any host from the hosts’ range except for that. For example, if I choose 185.78 then client D’s host will be:
 ```sh
-A Client Host Number: 0.0.185.78    |   00000000.00000000.|10111001.01001110
+Client D's Host Number: 0.0.185.78  |   00000000.00000000.|10111001.01001110
 ```
-By combining network address with host number, we will get the IP address of client A, which will be
+By combining network address with host number, we will get the IP address of client D, which will be
 ```sh
 Network:        211.191.0.0/16      |   11010011.10111111.|00000000.00000000
 Host Number:    0.0.185.254         |   00000000.00000000.|10111001.01001110
                                         | (Bitwise or)
-IP Address:     211.191.185.254     |   11010011.10111111.10111001.01001110
+IP Address:     211.191.185.78     |   11010011.10111111.10111001.01001110
 ```
-So __211.191.185.254__ is one of the correct answers.
+So __211.191.185.78__ is one of the correct answers.
 Summing up, we can say that correct answers' range is __(211.191.0.1 - 211.191.255.254)__, except for 211.191.185.75.
 
 ![NetPractice - level 1](./imgs/level_1.png)
