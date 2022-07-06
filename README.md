@@ -23,7 +23,7 @@ and the biggest:
 HostMax:        0.0.0.254           |   00000000.00000000.00000000.|11111110
 ```
 The client B's host number is 0.0.0.12, so we can choose any host from the hosts' range except for 12. For example, if I choose 13 then client A's host will be:
-```sh
+```
 Client A's Host Number: 0.0.0.13    |   00000000.00000000.00000000.|00001101
 ```
 By combining network address with host number, we will get the IP address of client A, which will be
@@ -54,7 +54,7 @@ and the biggest:
 HostMax:        0.0.255.254         |   00000000.00000000.|11111111.11111110
 ```
 The client C’s host number is 0.0.185.75, so we can choose any host from the hosts’ range except for that. For example, if I choose 185.78 then client D’s host will be:
-```sh
+```
 Client D's Host Number: 0.0.185.78  |   00000000.00000000.|10111001.01001110
 ```
 By combining network address with host number, we will get the IP address of client D, which will be
