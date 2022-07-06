@@ -62,7 +62,7 @@ By combining network address with host number, we will get the IP address of cli
 Network:        211.191.0.0/16      |   11010011.10111111.|00000000.00000000
 Host Number:    0.0.185.254         |   00000000.00000000.|10111001.01001110
                                         | (Bitwise or)
-IP Address:     211.191.185.78     |   11010011.10111111.10111001.01001110
+IP Address:     211.191.185.78   	|   11010011.10111111.10111001.01001110
 ```
 So __211.191.185.78__ is one of the correct answers.
 Summing up, we can say that correct answers' range is __(211.191.0.1 - 211.191.255.254)__, except for 211.191.185.75.
@@ -92,7 +92,7 @@ Here I choose __128.0.0.160__ Network address:
 Network:        128.0.0.160/30      |   10000000.00000000.00000000.101000|00
 ```
 Now we need to combine our network address with different hosts numbers from our hosts range to get IP addresses for our computers.<br>
-Because, our network has only two hosts, we can calculate only two IP addresses, which will be:
+Because, our network has only two hosts, we can calculate only two IP addresses, which will be:<br>
 Host 1:
 ```sh
 Network:        128.0.0.160/30      |   10000000.00000000.00000000.101000|00
@@ -109,3 +109,5 @@ IP Address:     128.0.0.162         |   10000000.00000000.00000000.10100010
 ```
 Our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__. Now we can use these addresses for our computers.<br>
 ![NetPractice - level 2](./imgs/level_2.png)
+### Level 2
+![NetPractice - level 8](./imgs/level_8.png)
