@@ -108,6 +108,11 @@ Host Number:    0.0.0.2             |   00000000.00000000.00000000.000000|10
 IP Address:     128.0.0.162         |   10000000.00000000.00000000.10100010
 ```
 Our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__. Now we can use these addresses for our computers.<br>
+
 ![NetPractice - level 2](./imgs/level_2.png)
-### Level 2
+___
+### Level 6
+![NetPractice - level 8](./imgs/level_6.png)
+___
+### Level 8
 ![NetPractice - level 8](./imgs/level_8.png)
