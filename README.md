@@ -122,7 +122,7 @@ Because of the fact that for subnet Router R22 and client C1 Interfaces we need 
 Notice: Here I choose /30 netmask just for efficiently, you can however use other Masks, such as /29 (255.255.255.248) or /28 (255.255.255.240). That will work too.
 ```
 This mask gives us two hosts.<br>
-Now we can calculate two IP addresses, and for calculation I use 149.248.202.17 Network address, because of as mentioned above first 16 (from 0 to 15) are used and 149.248.202.17 is first available IP:
+Now we can calculate two IP addresses, and for calculation I use 149.248.202.17 Network address, because of as mentioned above first 16 (0, 1 to 14 and 15) are used and 149.248.202.17 is first available IP:
 ```sh
 IP Address 1:   149.248.202.17      |   10010101.11111000.11001010.00010001
 ```
