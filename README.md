@@ -116,29 +116,15 @@ Another subnet is R22 Interface and computers in that network.<br>
 In our case that part of the subnet includes just 2 hosts. One for Router R22 Interface and another for client C Interface.<br>
 In that part we don't have any known data (not IP addresses not Net-mask). But we must remember that later on for Goal 2 we need to connect to the Internet. So this means that Client C and Router R22 also must have IP addresses in that Network (149.248.202.0/26).<br>
 We also need to remember that using IP addresses for Client D's and Router R23 subnet we already used 16 IP addresses (from 149.248.202.0 to 149.248.202.15).<br>
-It turns out, that now we have `62 - 16 = 46` free IP addresses, which we can use.<br>
-Because of the fact that for subnet Router R22 and client C1 Interfaces we need only two IPs, I chose the minimalistic network which will cover those 2 IPes. And the mask is `255.255.255.252` or just `/30`.<br>
-This mask gives us two hosts which are:<br>
-Host 1:
-```
-HostMin:        0.0.0.1             |   00000000.00000000.00000000.000000|01
-```
-Host 2:
-```sh
-HostMax:        0.0.0.2             |   00000000.00000000.00000000.000000|10
-```
+It turns out, that now we have `62 - 16 = 46` free IP addresses, which we can use.<br><br>
+Because of the fact that for subnet Router R22 and client C1 Interfaces we need only two IPs, I chose the minimalistic network which will cover those 2 IPs. And the mask is `255.255.255.252` or just `/30`.<br>
 Notice: Here I choose /30 netmask just for efficiently, you can however use other Masks, such as /29 (255.255.255.248) or /28 (255.255.255.240). That will work too.<br>
-Now we can calculate two IP addresses with help of our 2 hosts and network address, and for calculation we use 149.248.202.16 Network address, because of as mentioned above first 16 (from 0 to 15), are used:
+This mask gives us two hosts.<br>
+Now we can calculate two IP addresses, and for calculation I use 149.248.202.17 Network address, because of as mentioned above first 16 (from 0 to 15) are used and 149.248.202.17 is first available IP:
 ```sh
-Network:        149.248.202.16      |   10010101.11111000.11001010.00|010000
-Host Number:    0.0.0.1             |   00000000.00000000.00000000.000000|01
-                                        | (Bitwise or)
 IP Address 1:   149.248.202.17      |   10010101.11111000.11001010.00010001
 ```
 ```sh
-Network:        149.248.202.16      |   10010101.11111000.11001010.00|010000
-Host Number:    0.0.0.2             |   00000000.00000000.00000000.000000|10
-                                        | (Bitwise or)
 IP Address 2:   149.248.202.18      |   10010101.11111000.11001010.00010010
 ```
 So Router R22 will have `149.248.202.17` IP address and `255.255.255.252` Net-mask.<br>
