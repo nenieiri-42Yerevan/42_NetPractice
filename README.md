@@ -68,23 +68,17 @@ Here I choose __128.0.0.160__ Network address:
 ```sh
 Network:        128.0.0.160/30      |   10000000.00000000.00000000.101000|00
 ```
-Now we need to combine our network address with different hosts numbers from our hosts range to get IP addresses for our computers.<br>
-Because, our network has only two hosts, we can calculate only two IP addresses, which will be:<br>
-Host 1:
+In this case our hosts range will `128.0.0.161 - 128.0.0.162`
+Because, our network has only two computers and our hosts range also has two hosts, we have no other choice than the following choice:
+Computer D:
 ```sh
-Network:        128.0.0.160/30      |   10000000.00000000.00000000.101000|00
-Host Number:    0.0.0.1             |   00000000.00000000.00000000.000000|01
-                                        | (Bitwise or)
 IP Address:     128.0.0.161         |   10000000.00000000.00000000.10100001
 ```
-Host 2:
+Computer C:
 ```sh
-Network:        128.0.0.160/30      |   10000000.00000000.00000000.101000|00
-Host Number:    0.0.0.2             |   00000000.00000000.00000000.000000|10
-                                        | (Bitwise or)
 IP Address:     128.0.0.162         |   10000000.00000000.00000000.10100010
 ```
-Our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__. Now we can use these addresses for our computers.<br>
+Our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__.<br>
 
 ![NetPractice - level 2](./imgs/level_2.png)
 ___
