@@ -45,16 +45,9 @@ and the biggest:
 ```sh
 HostMax:        211.191.255.254     |   11010011.10111111 .11111111.11111110
 ```
-The client C’s host number is 0.0.185.75, so we can choose any host from the hosts’ range except for that. For example, if I choose 185.78 then client D’s host will be:
+The client C’s IP address is 211.191.185.75, so we can choose any IP from the hosts’ range except for that. For example, if I choose 185.78 then client D’s IP address will be:
 ```
-Client D's Host Number: 0.0.185.78  |   00000000.00000000.|10111001.01001110
-```
-By combining network address with host number, we will get the IP address of client D, which will be
-```sh
-Network:        211.191.0.0/16      |   11010011.10111111.|00000000.00000000
-Host Number:    0.0.185.254         |   00000000.00000000.|10111001.01001110
-                                        | (Bitwise or)
-IP Address:     211.191.185.78   	|   11010011.10111111.10111001.01001110
+Client D's IP:  211.191.185.78      |   11010011.10111111.10111001.01001110
 ```
 So __211.191.185.78__ is one of the correct answers.
 Summing up, we can say that correct answers' range is __(211.191.0.1 - 211.191.255.254)__, except for 211.191.185.75.
