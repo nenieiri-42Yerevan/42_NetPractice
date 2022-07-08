@@ -103,18 +103,12 @@ HostMax:        149.248.202.62      |   10010101.11111000.11001010.00111110
 Now let's start from the Goal 1.
 #### Goal 1
 From the Interface D1 we can see that a part of our network (starting from R23 Interface) has a 255.255.255.240 (or just /28) net-mask. Therefore, that part of network can have `2^4 - 2 = 14` hosts and R23 Interface must also have the same net mask. We don't forget that we can have only 62 hosts.<br>
-So to give Computer D IP address let's start from the first host in our range. IP address of D will be `149.248.202.1`:
+So to give Computer D IP address let's start from the first host in our range. IP address of D will be:
 ```sh
-Network:        149.248.202.0       |   10010101.11111000.11001010.00|000000
-Host Number:    0.0.0.1             |   00000000.00000000.00000000.0000|0001
-                                        | (Bitwise or)
 IP Address:     149.248.202.1       |   10010101.11111000.11001010.00000001
 ```
-And for the second IP (for Router R23 Interface) let's take second host number (0.0.0.2).<br> Therefore IP will be `149.248.202.2`:
+And for the second IP (for Router R23 Interface) let's take second host number:
 ```sh
-Network:        149.248.202.0       |   10010101.11111000.11001010.00|000000
-Host Number:    0.0.0.2             |   00000000.00000000.00000000.0000|0010
-                                        | (Bitwise or)
 IP Address:     149.248.202.2       |   10010101.11111000.11001010.00000010
 ```
 After that we can pass Router R23 Interface IP (149.248.202.2) to our `default gateway`, which means that all IP's which are not in that subnet go to that IP by default (`0.0.0.0/0 => 149.248.202.2`).<br><br>
