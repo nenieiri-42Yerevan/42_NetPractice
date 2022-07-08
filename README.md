@@ -61,14 +61,6 @@ Here, our two computers have the same Network mask (255.255.255.252 and /30 are 
 Network mask: 255.255.255.252 = 30  |   11111111.11111111.11111111.111111|00
 ```
 The hosts' count will be `2^2 - 2 = 2`.<br>
-Where the smallest one will have the following address:
-```
-HostMin:        0.0.0.1             |   00000000.00000000.00000000.000000|01
-```
-and the biggest:
-```sh
-HostMax:        0.0.0.2             |   00000000.00000000.00000000.000000|10
-```
 For communication between two computers we need to choose any network address and calculate their IP addresses with help of our Network mask.<br>
 We can choose any network address except for reserved addresses which lists you can see [__here__](https://en.wikipedia.org/wiki/Reserved_IP_addresses).
 For example you can't use 127.0.0.1 because it is reserved.<br>
