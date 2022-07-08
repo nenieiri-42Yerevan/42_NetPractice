@@ -111,7 +111,7 @@ And for the second IP (for Router R23 Interface) let's take second host number:
 ```sh
 IP Address:     149.248.202.2       |   10010101.11111000.11001010.00000010
 ```
-After that we can pass Router R23 Interface IP (149.248.202.2) to our `default gateway`, which means that all IP's which are not in that subnet go to that IP by default (`0.0.0.0/0 => 149.248.202.2`).<br><br>
+After that we can pass Router R23 Interface IP (149.248.202.2) to our `default gateway`, which means that we can reach all IPs which are not in that subnet through that IP by default (`0.0.0.0/0 => 149.248.202.2`).<br><br>
 Another subnet is R22 Interface and computers in that network.<br>
 In our case that part of the subnet includes just 2 hosts. One for Router R22 Interface and another for client C Interface.<br>
 In that part we don't have any known data (not IP addresses not Net-mask). But we must remember that later on for Goal 2 we need to connect to the Internet which is connected to the Network 149.248.202.0. So this means that Client C and Router R22 also must have IP addresses in that Network.<br>
