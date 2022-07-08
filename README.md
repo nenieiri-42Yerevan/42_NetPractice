@@ -118,7 +118,9 @@ In that part we don't have any known data (not IP addresses not Net-mask). But w
 We also need to remember that using IP addresses for Client D's and Router R23 subnet we already used 16 IP addresses (from 149.248.202.0 to 149.248.202.15).<br>
 It turns out, that now we have `62 - 16 = 46` free IP addresses, which we can use.<br><br>
 Because of the fact that for subnet Router R22 and client C1 Interfaces we need only two IPs, I chose the minimalistic network which will cover those 2 IPs. And the mask is `255.255.255.252` or just `/30`.<br>
-Notice: Here I choose /30 netmask just for efficiently, you can however use other Masks, such as /29 (255.255.255.248) or /28 (255.255.255.240). That will work too.<br>
+```
+Notice: Here I choose /30 netmask just for efficiently, you can however use other Masks, such as /29 (255.255.255.248) or /28 (255.255.255.240). That will work too.
+```
 This mask gives us two hosts.<br>
 Now we can calculate two IP addresses, and for calculation I use 149.248.202.17 Network address, because of as mentioned above first 16 (from 0 to 15) are used and 149.248.202.17 is first available IP:
 ```sh
