@@ -39,11 +39,11 @@ Network:        211.191.0.0/16      |   11010011.10111111.|00000000.00000000
 Client D has 255.255.0.0 Network Mask which means that this network can have `2^16 - 2 = 65,534` hosts.
 Where the smallest one will have the following address:
 ```
-HostMin:        0.0.0.1             |   00000000.00000000.|00000000.00000001
+HostMin:        211.191.0.1         |   011010011.10111111 .00000000.00000001
 ```
 and the biggest:
 ```sh
-HostMax:        0.0.255.254         |   00000000.00000000.|11111111.11111110
+HostMax:        211.191.255.254     |   11010011.10111111 .11111111.11111110
 ```
 The client C’s host number is 0.0.185.75, so we can choose any host from the hosts’ range except for that. For example, if I choose 185.78 then client D’s host will be:
 ```
