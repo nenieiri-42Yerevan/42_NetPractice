@@ -132,7 +132,7 @@ HostMax:        0.0.0.62            |   00000000.00000000.00000000.00|111110
 Now let's start from the Goal 1.
 #### Goal 1
 From the Interface D1 we can see that a part of our network (starting from R23 Interface) has a 255.255.255.240 (or just /28) net-mask. Therefore, that part of network can have `2^4 - 2 = 14` hosts and R23 Interface must also have the same net mask. We don't forget that we can have only 62 hosts.<br>
-So to give Computer IP address let's start from the first host in our range (from 0.0.0.1). IP address of D will be `149.248.202.1`:
+So to give Computer D IP address let's start from the first host in our range (from 0.0.0.1). IP address of D will be `149.248.202.1`:
 ```sh
 Network:        149.248.202.0       |   10010101.11111000.11001010.00|000000
 Host Number:    0.0.0.1             |   00000000.00000000.00000000.0000|0001
@@ -146,7 +146,7 @@ Host Number:    0.0.0.2             |   00000000.00000000.00000000.0000|0010
                                         | (Bitwise or)
 IP Address:     149.248.202.2       |   10010101.11111000.11001010.00000010
 ```
-After that we can pass Router R23 Interface IP (149.248.202.2) to our `default gateway`, which means that all IP's which are not in that subnet go to that IP by default (`0.0.0.0/0 => 149.248.202.2`).<br>
+After that we can pass Router R23 Interface IP (149.248.202.2) to our `default gateway`, which means that all IP's which are not in that subnet go to that IP by default (`0.0.0.0/0 => 149.248.202.2`).<br><br>
 Another subnet is R22 Interface and computers in that network. In our case that part of the subnet includes just 2 hosts. One for Router R22 Interface and another for client C Interface.<br>
 In that part we don't have any known data (not IP addresses not Net-mask). But we must remember that later on for Goal 2 we need to connect to the Internet which is connected to the Network 149.248.202.0. So this means that Client C and Router R22 also must have IP addresses in that Network.<br>
 We also need to remember that using IP addresses for Client D's and Router R23 subnet we already used 16 IP addresses from network 149.248.202.0 (14 IP's for hosts, 1 IP for broadcast and 1 IP for Network Address).<br>
