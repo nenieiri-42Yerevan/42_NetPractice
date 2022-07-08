@@ -69,16 +69,16 @@ Here I choose __128.0.0.160__ Network address:
 Network:        128.0.0.160/30      |   10000000.00000000.00000000.101000|00
 ```
 In this case our hosts range will be `128.0.0.161 - 128.0.0.162`. <br>
-Because, our network has only two computers and our hosts range also has two hosts, we have no other choice than the following choice:
-Computer D:
+Because, our network has only two computers and our hosts range also has two hosts, we have no other choice than the following:
+A computer:
 ```sh
 IP Address:     128.0.0.161         |   10000000.00000000.00000000.10100001
 ```
-Computer C:
+and the other computer:
 ```sh
 IP Address:     128.0.0.162         |   10000000.00000000.00000000.10100010
 ```
-Our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__.<br>
+Thus our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__.<br>
 
 ![NetPractice - level 2](./imgs/level_2.png)
 ___
