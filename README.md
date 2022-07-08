@@ -15,7 +15,7 @@ This means that client A must also have the same network address: __104.95.23.0_
 Network mask __255.255.255.0__ shows that in this network we can have `2^8 - 2 = 254` hosts (computers).
 Where the smallest one will have the following address:
 ```
-HostMin:		104.95.23.1			|	01101000.01011111.00010111.00000001
+HostMin:        104.95.23.1			|	01101000.01011111.00010111.00000001
 ```
 and the biggest:
 ```sh
@@ -23,7 +23,7 @@ HostMax:        104.95.23.254       |	01101000.01011111.00010111.11111110
 ```
 The client B's IP address is 104.95.23.12, so we can choose any IP from the hosts' range except for 12. For example, if I choose 13 then client A's IP address will be:
 ```
-Client A's Host: 104.95.23.13		|   01101000.01011111.00010111.00001101
+Client A's Host: 104.95.23.13       |   01101000.01011111.00010111.00001101
 ```
 So __104.95.23.13__ is one of the correct answers.<br>
 Summing up, we can say that correct answers' range is __(104.95.23.1 - 104.95.23.254)__, except for 104.95.23.12.
