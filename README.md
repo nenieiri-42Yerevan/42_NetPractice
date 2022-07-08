@@ -68,7 +68,7 @@ Here I choose __128.0.0.160__ Network address:
 ```sh
 Network:        128.0.0.160/30      |   10000000.00000000.00000000.101000|00
 ```
-In this case our hosts range will `128.0.0.161 - 128.0.0.162`
+In this case our hosts range will be `128.0.0.161 - 128.0.0.162`. <br>
 Because, our network has only two computers and our hosts range also has two hosts, we have no other choice than the following choice:
 Computer D:
 ```sh
