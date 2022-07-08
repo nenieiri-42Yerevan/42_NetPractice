@@ -69,8 +69,8 @@ Here I choose __128.0.0.160__ Network address:
 Network:        128.0.0.160/30      |   10000000.00000000.00000000.101000|00
 ```
 In this case our hosts range will be `128.0.0.161 - 128.0.0.162`. <br>
-Because, our network has only two computers and our hosts range also has two hosts, we have no other choice than the following:
-A computer:
+Because, our network has only two computers and our hosts range also has two hosts, we have no other choice than the following:<br>
+a computer:
 ```sh
 IP Address:     128.0.0.161         |   10000000.00000000.00000000.10100001
 ```
@@ -86,7 +86,7 @@ ___
 ![NetPractice - level 8](./imgs/level_6.png)
 ___
 ### Level 8
-On the level 8, first of all we need to check that on the routing table "internet I" there is only one record which is `149.248.202.0/26`. According to goals 2 and 3 our computers need to be connected to that internet, therefore we can assume that all our computers' IPs need to be in that subnet. So first of all we need to calculate the Network address:
+On the level 8, first of all we need to check that on the routing table "internet I" there is only one record which is `149.248.202.0/26`. According to goals 2 and 3 our computers need to be connected to that internet, therefore we can assume that all our computers' IPs need to be in that subnet. So first of all we need to calculate the Network address and its host range:
 ```sh
 IP Address:     149.248.202.0/26    |   10010101.11111000.11001010.00000000
 Net-mask:       255.255.255.192     |   11111111.11111111.11111111.11|000000
@@ -95,15 +95,15 @@ Network:        149.248.202.0       |   10010101.11111000.11001010.00|000000
 ```
 Having Net-mask we can also calculate the number of valid hosts which will be `2^6 - 2 = 62`.<br> This means that we can have only `62` hosts. Where:
 ```
-HostMin:        0.0.0.1             |   00000000.00000000.00000000.00|000001
+HostMin:        149.248.202.1       |   10010101.11111000.11001010.00000001
 ```
 ```sh
-HostMax:        0.0.0.62            |   00000000.00000000.00000000.00|111110
+HostMax:        149.248.202.62      |   10010101.11111000.11001010.00111110
 ```
 Now let's start from the Goal 1.
 #### Goal 1
 From the Interface D1 we can see that a part of our network (starting from R23 Interface) has a 255.255.255.240 (or just /28) net-mask. Therefore, that part of network can have `2^4 - 2 = 14` hosts and R23 Interface must also have the same net mask. We don't forget that we can have only 62 hosts.<br>
-So to give Computer D IP address let's start from the first host in our range (from 0.0.0.1). IP address of D will be `149.248.202.1`:
+So to give Computer D IP address let's start from the first host in our range. IP address of D will be `149.248.202.1`:
 ```sh
 Network:        149.248.202.0       |   10010101.11111000.11001010.00|000000
 Host Number:    0.0.0.1             |   00000000.00000000.00000000.0000|0001
