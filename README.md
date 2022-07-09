@@ -135,8 +135,8 @@ The final step for ending the goal 1 is to Correct Client C's routing table.
 For that we need to pass router R22 Interface IP address to the Default gateway (that is same as 0.0.0.0/0 or just default). I.e. `0.0.0.0/0 => 149.248.202.17`.
 #### Goal 2, Goal 3
 For goal 2 and goal 3 we need to connect the computers C and D to the Internet.<br>
-In this stage we already configured and connected C and D to the router 2 and now we need to configure the connections between Router 2 and Router 1, Router 1 and the Internet I, and their reverses (Internet I to router 1, and router 1 to router 2).<br>
-The Internet I is located in Router R12's network, so for router 2 we need to in its routing table write through which interface it can go to that network. So here I wrote `163.25.250.12/28 =>`, but you can write just `0.0.0.0/0 =>` for its default gateway to router 13 Interface (Here that doesn't matter what you will write, both is correct).<br>
+In this stage we already configured and connected C and D to the router 2 and now we need to configure the connections between Router 2 and Router 1, Router 1 and the Internet I, and their reverses (Internet I to router 1, and router 1 to router 2).<br><br>
+The Internet I is located in Router R12's network, so for router 2 we need to in its routing table write through which interface it can go to that network. So here I wrote `163.25.250.12/28 =>`, but you can write just `0.0.0.0/0 =>` for its default gateway to router 13 Interface (Here that doesn't matter what you will write, both is correct).<br><br>
 From second part of that record in routing table we can see that we already have IP address of Router 13 Interface which is `149.248.202.62` and here it also in Network `149.248.202.0/26` range (IPs from one router to another router can be out of Network range, but here we are given in the range).<br>
 Using IP addresses for Router 2 R23 and Router 2 R23 subnets we now have `46 - 4 = 42` free and available addresses, which are in this range `149.248.202.21 - 149.248.202.62`.<br>
 As we can see above, IP address of router R13 `149.248.202.62` is the last address of range.<br>
