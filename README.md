@@ -103,6 +103,29 @@ ___
 ### Level 4
 ___
 ### Level 5
+Here there are two subnets, one of them start from Router R1 Interface and other from Router R2 Interface.
+#### Goal 1
+The Goal 1 is similar as level 1. Here we have IP address and Net-mask of Router R1 Interface so we can calculate the Network address and hosts' range of this subnet:
+```sh
+IP Address:     96.160.137.126      |   01100000.10100000.10001001.01111110
+Net-mask:       255.255.255.128 = 25|   11111111.11111111.11111111.1|0000000
+                                        & (Bitwise and)
+Network:        96.160.137.0/25     |   01100000.10100000.10001001.0|0000000
+```
+Hosts' range will be `96.160.137.1 - 96.160.137.126`.<br>
+So for computer A we can choose any host number from this range.<br>
+Here I have chosen `96.160.137.125`.<br>
+Net-mask of Computer A must be the same as Net-mask of Router R1: `255.255.255.128`.
+#### Goal 2
+This is a identical as Goal 1. So for this subnet we get hosts' range `138.127.64.1 - 138.127.127.254`.<br>
+From this range I have chosen `138.127.80.80` IP for computer B. Its Net-mask will be the same as Net-mask for Router R2: `255.255.192.0`. This is the same as `/18`.
+#### Goal 3
+For communication between two computers which are in different subnets we need to configure their routing tables.<br>
+A routing table contains the information necessary to forward a packet along the best path toward its destination.<br>
+In routing tables we need to write where to pass packets that have some IPs in their destination.<br>
+Here we can just write that whole packets that does not match any IPs in this subnet pass to the router. In other words we define the `default` gateway for them (`default` is the same as `0.0.0.0/0`).<br>
+So for computer A it will be the interface of Router R1 Interface`0.0.0.0/0=> 96.160.137.126`.<br>
+And for computer B it will be the interface of Router R2 Interface`default => 138.127.118.254`.<br><br>
 ![NetPractice - level 5](./imgs/level_5.png)
 ___
 ### Level 6
