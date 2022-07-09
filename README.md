@@ -82,8 +82,15 @@ Thus our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__.<
 
 ![NetPractice - level 2](./imgs/level_2.png)
 ___
+### Level 3
+___
+### Level 4
+___
+### Level 5
+___
 ### Level 6
-![NetPractice - level 8](./imgs/level_6.png)
+___
+### Level 7
 ___
 ### Level 8
 On the level 8, first of all we need to check that on the routing table "internet I" there is only one record which is `149.248.202.0/26`. According to goals 2 and 3 our computers need to be connected to that internet, therefore we can assume that all our computers' IPs need to be in that subnet. So first of all we need to calculate the Network address and its host range:
@@ -148,3 +155,7 @@ In this stage our computers already connected to the Internet I but for the reve
 For that in routing table of the Internet I we need to write through which interface the network `149.248.202.0/26` is located, which is the interface of Router R12: `149.248.202.0/26 => 163.25.250.12`.<br><br>
 And for routing table Router 1 we also need to write through which interface the network `149.248.202.0/26` is located, which is the interface of Router 21: `149.248.202.0/26 => 149.248.202.61`. We don't need to look to the second record of the routing table of Router 1, because it just shows us through which interface Router 1's default gateway is located.<br><br>
 ![NetPractice - level 8](./imgs/level_8.png)
+___
+### Level 9
+___
+### Level 10
