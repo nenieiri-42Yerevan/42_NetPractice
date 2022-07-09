@@ -83,6 +83,8 @@ Thus our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__.<
 ![NetPractice - level 2](./imgs/level_2.png)
 ___
 ### Level 3
+#### Goal 1, Goal 2, Goal 3
+![NetPractice - level 3](./imgs/level_3.png)
 ___
 ### Level 4
 ___
