@@ -86,7 +86,7 @@ ___
 #### Goal 1, Goal 2, Goal 3
 There are 3 computers which are connected to each other through Switch.<br>
 There is no router, which means that for comunication computers need to have the same network address, the same Net-mask, but different Host numbers.<br>
-So, the Net-mask for A, B and C will be 255.255.255.128 (or /25).<br>
+So, the Net-mask for A and B will be 255.255.255.128 (or /25).<br>
 We also know the IP address of computer A. Therefore, we can calculate the network address of this subnet and its hosts' range.<br>
 The Network address will be:
 ```sh
