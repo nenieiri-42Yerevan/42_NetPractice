@@ -122,7 +122,7 @@ From this range I have chosen `138.127.80.80` IP for computer B. Its Net-mask wi
 #### Goal 3
 For communication between two computers which are in different subnets we need to configure their routing tables.<br>
 A routing table contains the information necessary to forward a packet along the best path toward its destination.<br>
-In routing tables we need to write where to pass packets that have some IPs in their destination.<br>
+In routing tables we need to write where to pass packets that have some IPs in their destination which is out of subnet.<br>
 Here we can just write that whole packets that does not match any IPs in this subnet pass to the router. In other words we define the `default` gateway for them (`default` is the same as `0.0.0.0/0`).<br>
 So for computer A it will be the interface of Router R1 Interface`0.0.0.0/0=> 96.160.137.126`.<br>
 And for computer B it will be the interface of Router R2 Interface`default => 138.127.118.254`.<br><br>
