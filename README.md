@@ -84,6 +84,20 @@ Thus our IP addresses in these network are __128.0.0.161__ and __128.0.0.162__.<
 ___
 ### Level 3
 #### Goal 1, Goal 2, Goal 3
+There are 3 computers which are connected to each other through Switch.
+There is no router, which means that for comunication computers need to have the same network address, the same Net-mask, but different Host numbers.<br>
+So, the Net-mask for A, B and C will be 255.255.255.128 (or /25).<br>
+We also know the IP address of computer A. Therefore, we can calculate the network address of this subnet and its hosts' range.
+The Network address will be:
+```sh
+IP Address:     104.198.10.125      |   01101000.11000110.00001010.01111101
+Net-mask:       255.255.255.128 = 25|   11111111.11111111.11111111.1|0000000
+                                        & (Bitwise and)
+Network:        104.198.10.0/25     |   01101000.11000110.00001010.0|0000000
+```
+Hosts' range will be `104.198.10.1 - 104.198.10.126`.<br>
+So for computer B and C we can choose any host number from this range.<br>
+Here I have chosen `104.198.10.123` and `104.198.10.124`.<br><br>
 ![NetPractice - level 3](./imgs/level_3.png)
 ___
 ### Level 4
