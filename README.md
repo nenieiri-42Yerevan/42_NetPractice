@@ -146,6 +146,5 @@ To get the second IP address for that part of the network we just can subtract 1
 Choosing such network mask in the end we have `42 - 4 = 38` more available hosts. But we don't need them anymore.<br><br>
 In this stage our computers already connected to the Internet I but for the reverse connection from the Internet I to our computers we need to configure routing tables for Internet I and Router 1, so they know where to send requests' answers.<br><br>
 For that in routing table of the Internet I we need to write through which interface the network `149.248.202.0/26` is located, which is the interface of Router R12: `149.248.202.0/26 => 163.25.250.12`.<br><br>
-And for routing table Router 1 we also need to write through which interface the network `149.248.202.0/26` is located, which is the interface of Router 21: `149.248.202.0/26 => 149.248.202.61`.<br>
-We don't need to look to the second record of the routing table of Router 1, because it just shows us through which interface Router 1's default gateway is located.<br>
+And for routing table Router 1 we also need to write through which interface the network `149.248.202.0/26` is located, which is the interface of Router 21: `149.248.202.0/26 => 149.248.202.61`. We don't need to look to the second record of the routing table of Router 1, because it just shows us through which interface Router 1's default gateway is located.<br><br>
 ![NetPractice - level 8](./imgs/level_8.png)
