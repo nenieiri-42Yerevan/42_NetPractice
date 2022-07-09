@@ -118,7 +118,7 @@ Here I have chosen `96.160.137.125`.<br>
 Net-mask of Computer A must be the same as Net-mask of Router R1: `255.255.255.128`.
 #### Goal 2
 This is a identical as Goal 1. So for this subnet we get hosts' range `138.127.64.1 - 138.127.127.254`.<br>
-From this range I have chosen `138.127.80.80` IP for computer B. Its Net-mask will be the same as Net-mask for Router R2: `255.255.192.0`. This is the same as `/18`.
+From this range I have chosen `138.127.80.80` IP for computer B. Its Net-mask will be the same as Net-mask for Router R2: `255.255.192.0` (This is the same as `/18`).
 #### Goal 3
 For communication between two computers which are in different subnets we need to configure their routing tables.<br>
 A routing table contains the information necessary to forward a packet along the best path toward its destination.<br>
