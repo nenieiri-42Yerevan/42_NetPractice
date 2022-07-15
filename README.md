@@ -101,6 +101,7 @@ Here I have chosen `104.198.10.123` and `104.198.10.124`.<br><br>
 ![NetPractice - level 3](./imgs/level_3.png)
 ___
 ### Level 4
+![NetPractice - level 4](./imgs/level_4.png)
 ___
 ### Level 5
 Here there are two subnets, one of them start from Router R1 Interface and other from Router R2 Interface.
