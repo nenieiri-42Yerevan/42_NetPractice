@@ -130,6 +130,7 @@ And for computer B it will be the interface of Router R2 Interface`default => 13
 ![NetPractice - level 5](./imgs/level_5.png)
 ___
 ### Level 6
+![NetPractice - level 6](./imgs/level_6.png)
 ___
 ### Level 7
 ___
