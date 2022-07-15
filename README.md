@@ -130,6 +130,15 @@ And for computer B it will be the interface of Router R2 Interface`default => 13
 ![NetPractice - level 5](./imgs/level_5.png)
 ___
 ### Level 6
+#### Goal 1
+Based on previous levels we can now easily configure the subnet that starts from R1 Interface.<br>
+R1 Interface Net-mask can be passed to client A and with the help of client A's IP we can calculate Hosts' range for this subnet. That will be `60.253.201.129 - 60.253.201.254`. And from this range I have chosen `60.253.201.254` IP for Router R1 Interface and also written it as a default gateway for this subnet `0.0.0.0/0 => 60.253.201.254`.<br><br>
+After that, when Router 1 recevies a packet from client A, it needs to know where to pass it. So, we need to write about that in its Routing table.<br>
+There is already one record in the Routing table, which says that the Router passes packets to the 163.172.250.1 IP Interface. We can't see that IP Interface in the picture but we can assume that this IP is an interface to reach Internet I.<br>
+Therefore, in the left part of that record we need to write the subnet that is under 163.172.250.1 Interface. And that will be the `8.8.8.8/16` subnet.<br
+It can be also written like this `0.0.0.0/0 => 163.172.250.1`. It means that all packets will be passed to 163.172.250.1 Interface as default gateway.<br>
+Howerer, I have chosen the `8.8.8.8/16 => 163.172.250.1` record, because it is more specific.<br><br>
+In this stage our packet can successfully reach from Client A to Internet I, but Internet I also needs to be connected with client A in order to send packets back to it. This means that we need to configure Internet I Routing table the way, which will allow it to reach to 60.253.201.254/25 subnet through Router R2 Interface. It will be `60.253.201.254/25 => 163.172.250.12`.
 ![NetPractice - level 6](./imgs/level_6.png)
 ___
 ### Level 7
